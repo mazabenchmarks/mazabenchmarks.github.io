@@ -100,7 +100,6 @@ var Filter = function Filter(_ref) {
 	    setItemsFiltered = _ref.setItemsFiltered;
 
 	var handleChange = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_preact_hooks__["a" /* useCallback */])(function (e) {
-		console.log(items);
 		setFilterValue(e.target.value);
 		setItemsFiltered(items.filter(function (item) {
 			return (item[1] + ' ' + item[2]).toLocaleLowerCase().indexOf(e.target.value) !== -1;
